@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 1200px;
+    
+    margin: 40px 0; 
+}
+
+.container .card {
+    position: relative;
+
+    min-width: 350px;
+    height: 440px;
+    
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px rgba(255, 255, 255, 0.1); 
+    
+    border-radius: 10px;
+    margin: 30px;
+
+    transition: .3s;
+}
+
+.container .card:hover {
+    opacity: .9;
+}
+
+.container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+
+    background: #f6f6f6;
+    border: 2px solid #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    transition: 0.5s;
+}
+
+.container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+.container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content .imgBox img {
+    width: 100px;
+
+    clip-path: circle(50px);
+}
+
+.container .card .box .content h2 {
+    color: #2f2f2f;
+
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container .card .box .content p {
+    color: #2e2e2e;
+
+    font-size: 1em;
+}
+
+.container .card .box .content .btn {
+    margin-top: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .card .box .content .btn button {
+    cursor: pointer;
+    
+    width: 150px;
+    height: 40px;
+
+    border-radius: 5px;
+    border: none;
+
+    background-image: linear-gradient(to bottom right, rgb(91, 31, 255), rgb(255, 0, 106));
+    color: #e5e5e5;
+
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.container .card .box .content .btn button:hover {
+    opacity: .6;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer h6 {
+    padding: 20px;
+
+    font-weight: 100;
+}
