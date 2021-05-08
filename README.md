@@ -13,5 +13,5 @@
 
 <h1 align="center">Light Version</h1>
 <p align="center">
-  <img src="light-neumorphism-cards/img/xLight-neumorphism-css.png">
+  <img src="dark-neumorphism-cards/img/xLight-neumorphism-css.png">
 </p>
